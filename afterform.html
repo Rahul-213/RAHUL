@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('campus2.jpg'); /* Replace with your background image link */
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #6b03f4; /* Green color */
+        }
+
+        .success-message {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .application-queue {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .application-box {
+            background-color: #ffffff; /* White color for the box */
+            border: 2px solid #f90404; /* Green color for the border */
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .next-button {
+            background-color: #3498db; /* Blue color for the button */
+            color: #ffffff; /* White color for the text */
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+    <title>Application Sent</title>
+</head>
+<body>
+    <div class="success-message">
+      <h1> APPLICATION SENT SUCCESSFULLY</h1>  
+    </div>
+
+    <div class="application-queue">
+        APPLICATION QUEUE
+    </div>
+
+    <div class="application-box" id="randomNumberBox">
+        <!-- JavaScript will populate this div with a random number -->
+    </div>
+
+    <a href="endpage.html" class="next-button">NEXT</a>
+
+    <script>
+        // JavaScript to generate a random number between 30 and 100 and display it
+        document.getElementById("randomNumberBox").innerText = Math.floor(Math.random() * (100 - 30 + 1) + 30);
+    </script>
+</body>
+</html>
+

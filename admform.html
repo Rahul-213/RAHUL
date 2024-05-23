@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Your existing styles */
+  </style>
+  <title>FILL THESE DETAILS</title>
+</head>
+<body>
+  <div class="container">
+    <h1>PERSONAL DETAILS</h1>
+    <form action="process_admission.php" method="post" onsubmit="return redirectToNewPage()">
+      <!-- Student Information -->
+      <label for="studentName">Student Name:</label>
+      <input type="text" id="studentName" name="studentName" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+      <!-- Parent Information -->
+      <label for="parentName">Parent's Name:</label>
+      <input type="text" id="parentName" name="parentName" required>
+
+      <label for="parentPhoneNumber">Parent's Phone Number:</label>
+      <input type="tel" id="parentPhoneNumber" name="parentPhoneNumber" required>
+
+      <!-- Academic Information -->
+      <label for="tenthGrade">10th Final Grade (out of 100%):</label>
+      <input type="number" id="tenthGrade" name="tenthGrade" min="0" max="100" required>
+
+      <label for="intermediateGrade">Intermediate Final Grade (out of 1000):</label>
+      <input type="number" id="intermediateGrade" name="intermediateGrade" min="0" required>
+
+      <!-- Additional Note -->
+      <p>** ORIGINAL GRADE SHEETS SHOULD BE ALSO PROVIDED PHYSICALLY. **</p>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script>
+    function redirectToNewPage() {
+      // Add any additional processing or validation logic here
+      // For now, simply redirect to a new page (replace 'new_page.html' with your actual page)
+      window.location.href = 'afterform.html';
+      return false; // Prevents the default form submission
+    }
+  </script>
+</body>
+</html>
+
+
